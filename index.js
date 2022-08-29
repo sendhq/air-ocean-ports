@@ -3,7 +3,7 @@ const { airlines } = require('./lib/airlines')
 const airports = airlines.map((airline) => ({
   country: airline['COUNTRY'],
   city: airline['CITY']['AIRPORT'],
-  airport: airline['CITY']['AIRPORT'],
+  name: airline['CITY']['AIRPORT'],
   iata_code: airline['IATA CODE'],
 }))
 
@@ -37,7 +37,7 @@ const searchByPorts = (searchString) => {
 
 const searchAirPortsByName = (name) => {
   return airports.filter((airline) =>
-    airline.airport.toLowerCase().includes(name.toLowerCase()),
+    airline.name.toLowerCase().includes(name.toLowerCase()),
   )
 }
 
@@ -52,8 +52,6 @@ const searchAirPortsByIATACode = (code) => {
     airline.iata_code.toLowerCase().includes(code.toLowerCase()),
   )
 }
-
-console.log('sdss', searchAirPortsByName('Aarhus'))
 
 module.exports = {
   JSON: ports,
