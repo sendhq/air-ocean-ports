@@ -7,6 +7,10 @@ const airports = airlines.map((airline) => ({
   iata_code: airline['IATA CODE'],
 }))
 
+const shuffle = (array) => {
+  return array.sort(() => Math.random() - 0.5)
+}
+
 const searchPortsByName = (name) => {
   return ports.filter((port) =>
     port.name.toLowerCase().includes(name.toLowerCase()),
@@ -26,11 +30,11 @@ const searchPortsByCountry = (country) => {
 }
 
 const searchByPorts = (searchString) => {
-  return [
+  return shuffle([
     ...searchPortsByName(searchString),
     ...searchPortsByCity(searchString),
     ...searchPortsByCountry(searchString),
-  ]
+  ])
 }
 
 // airlines
@@ -54,15 +58,15 @@ const searchAirPortsByIATACode = (code) => {
 }
 
 const searchByAirports = (string) => {
-  return [
+  return shuffle([
     ...searchAirPortsByCountry(string),
     ...searchAirPortsByName(string),
     ...searchAirPortsByIATACode(string),
-  ]
+  ])
 }
 
 const searchAllPorts = (value) => {
-  return [...searchByAirports(value), ...searchByPorts(value)]
+  return shuffle([...searchByAirports(value), ...searchByPorts(value)])
 }
 
 module.exports = {
