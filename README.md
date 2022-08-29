@@ -8,7 +8,7 @@ Minified sea ports based on [this package](https://github.com/marchah/sea-ports/
 Install via [npm](https://www.npmjs.com/):
 
 ```
-$ npm install ocean-air-ports
+$ npm install air-ocean-ports
 ```
 
 ## Documentation
@@ -122,7 +122,7 @@ Search for airports matching with name
 ## Examples
 
 ````javascript
-var ports = require('ocean-air-ports');
+var ports = require('air-ocean-ports');
 
 console.log(ports.searchAirPortsByName("Aarhus"));
 /*
@@ -271,7 +271,7 @@ Search for airports matching with country
 ## Examples
 
 ````javascript
-var ports = require('ocean-air-ports');
+var ports = require('air-ocean-ports');
 
 console.log(ports.searchAirPortsByCountry("Denmark"));
 /*
@@ -294,7 +294,7 @@ Search for airports matching with IATA_CODE
 ## Examples
 
 ````javascript
-var ports = require('ocean-air-ports');
+var ports = require('air-ocean-ports');
 
 console.log(ports.searchAirPortsByIATACode("AAR"));
 /*
