@@ -53,8 +53,20 @@ const searchAirPortsByIATACode = (code) => {
   )
 }
 
+const searchByAirports = (string) => {
+  return [
+    ...searchAirPortsByCountry(string),
+    ...searchAirPortsByName(string),
+    ...searchAirPortsByIATACode(string),
+  ]
+}
+
+const searchAllPorts = () => {
+  return [...searchByAirports, ...searchByPorts]
+}
+
 module.exports = {
-  JSON: ports,
+  JSON: [...ports, ...airports],
   searchPortsByCity,
   searchPortsByCountry,
   searchPortsByName,
@@ -62,4 +74,6 @@ module.exports = {
   searchAirPortsByName,
   searchAirPortsByCountry,
   searchAirPortsByIATACode,
+  searchByAirports,
+  searchAllPorts,
 }
