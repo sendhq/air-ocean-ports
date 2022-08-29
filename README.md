@@ -8,7 +8,7 @@ Minified sea ports based on [this package](https://github.com/marchah/sea-ports/
 Install via [npm](https://www.npmjs.com/):
 
 ```
-$ npm install ocean-ports
+$ npm install ocean-air-ports
 ```
 
 ## Documentation
@@ -17,7 +17,7 @@ $ npm install ocean-ports
 
 #### `JSON`
 
-Returns an array of the ports
+Returns an array of the ports (ocean & air)
 ```javascript
 [
   {
@@ -38,14 +38,7 @@ Returns an array of the ports
     "country": "United Arab Emirates",
     "unlocs": "AEDXB",
   },
-  ...
-]
-```
-
-Returns an array of the airports
-```javascript
-[
-  {
+    {
     "name": "Aarhus",
     "city": "Aarhus",
     "country": "Denmark",

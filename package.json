@@ -1,11 +1,28 @@
 {
   "name": "ocean-air-ports",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "ports send uses",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Excellence Oyeniran <oyeniranexcellenced@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chevck/ocean-air-ports.git"
+  },
+  "keywords": [
+    "ocean",
+    "air",
+    "port",
+    "sea"
+  ],
+  "bugs": {
+    "url": "https://github.com/chevck/ocean-air-ports/issues"
+  },
+  "homepage": "https://github.com/chevck/ocean-air-ports#readme"
 }
