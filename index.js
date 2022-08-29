@@ -15,7 +15,7 @@ const searchPortsByName = (name) => {
 
 const searchPortsByCity = (city) => {
   return ports.filter((port) =>
-    port?.province?.toLowerCase().includes(city.toLowerCase()),
+    (port.province || '').toLowerCase().includes(city.toLowerCase()),
   )
 }
 
