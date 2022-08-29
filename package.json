@@ -1,5 +1,5 @@
 {
-  "name": "ocean-air-ports",
+  "name": "air-ocean-ports",
   "version": "0.0.1",
   "description": "ports send uses",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chevck/ocean-air-ports.git"
+    "url": "git+https://github.com/chevck/air-ocean-ports.git"
   },
   "keywords": [
     "ocean",
@@ -22,7 +22,7 @@
     "sea"
   ],
   "bugs": {
-    "url": "https://github.com/chevck/ocean-air-ports/issues"
+    "url": "https://github.com/chevck/air-ocean-ports/issues"
   },
-  "homepage": "https://github.com/chevck/ocean-air-ports#readme"
+  "homepage": "https://github.com/chevck/air-ocean-ports#readme"
 }
