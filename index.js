@@ -3,7 +3,7 @@ const { airlines } = require('./lib/airlines')
 const airports = airlines.map((airline) => ({
   country: airline['COUNTRY'],
   city: airline['CITY']['AIRPORT'],
-  name: airline['CITY']['AIRPORT'],
+  name: `${airline['CITY']['AIRPORT']} (${airline['IATA CODE']})`,
   iata_code: airline['IATA CODE'],
 }))
 
@@ -61,8 +61,8 @@ const searchByAirports = (string) => {
   ]
 }
 
-const searchAllPorts = () => {
-  return [...searchByAirports, ...searchByPorts]
+const searchAllPorts = (value) => {
+  return [...searchByAirports(value), ...searchByPorts(value)]
 }
 
 module.exports = {
