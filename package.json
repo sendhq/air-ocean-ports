@@ -1,6 +1,6 @@
 {
-  "name": "@chevck/air-ocean-ports",
-  "version": "0.0.3",
+  "name": "air-ocean-ports",
+  "version": "0.0.4",
   "description": "ports send uses",
   "main": "index.js",
   "scripts": {
