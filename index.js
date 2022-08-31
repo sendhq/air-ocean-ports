@@ -1,11 +1,14 @@
 const { ports } = require('./lib/ports')
 const { airlines } = require('./lib/airlines')
-const airports = airlines.map((airline) => ({
-  country: airline['COUNTRY'],
-  city: airline['CITY']['AIRPORT'],
-  name: `${airline['CITY']['AIRPORT']} (${airline['IATA CODE']})`,
-  iata_code: airline['IATA CODE'],
-}))
+const airports = airlines.reduce((acc, curr) => {
+  const airline = {
+    country: curr['COUNTRY'],
+    city: curr['CITY']['AIRPORT'],
+    name: `${curr['CITY']['AIRPORT']} (${curr['IATA CODE']})`,
+    iata_code: curr['IATA CODE'],
+  }
+  return [...acc, { ...airline, type: 'city' }, { ...airline, type: 'port' }]
+}, [])
 
 const shuffle = (array) => {
   return array.sort(() => Math.random() - 0.5)
