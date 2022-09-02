@@ -323,3 +323,17 @@ Returns an array of airlines
   ...
 ]
 ```
+
+### `SHIPPING LINES`
+
+Returns an array of shipping lines
+
+```javascript
+[
+  'A.P. MOLLER-MAERSK GROUP', 
+  'MEDITERRANEAN SHIPPING COMPANY S.A. (MSC)',
+  'CHINA COSCO',
+  'CMA CGM GROUP',
+  ...
+]
+```

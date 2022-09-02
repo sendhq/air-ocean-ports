@@ -1,6 +1,8 @@
 const { ports } = require('./lib/ports')
 const { airports: airportsArray } = require('./lib/airports')
 const { airlines: airlinesArray } = require('./lib/airlines')
+const { shippingLines } = require('./lib/shippinglines')
+
 const airports = airportsArray.reduce((acc, curr) => {
   const airport = {
     country: curr['COUNTRY'],
@@ -12,6 +14,7 @@ const airports = airportsArray.reduce((acc, curr) => {
 }, [])
 
 const airlines = airlinesArray.map((x) => x.airline)
+const shippinglines = shippingLines.map((x) => x.value)
 
 const shuffle = (array) => {
   return array.sort(() => Math.random() - 0.5)
@@ -75,14 +78,8 @@ const searchAllPorts = (value) => {
   return shuffle([...searchByAirports(value), ...searchByPorts(value)])
 }
 
-// airlines
-
-const getAirlines = () => [...airlines]
-
 // console.log('sds', searchAirPortsByIATACode('AMA'))
 // console.log('sds', searchByAirports('AMA'))
-
-console.log('sddd', getAirlines())
 
 module.exports = {
   JSON: [...ports, ...airports],
@@ -95,5 +92,6 @@ module.exports = {
   searchAirPortsByIATACode,
   searchByAirports,
   searchAllPorts,
-  getAirlines,
+  AIRLINES: airlines,
+  SHIPPINGLINES: shippinglines,
 }
