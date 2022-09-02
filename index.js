@@ -75,8 +75,14 @@ const searchAllPorts = (value) => {
   return shuffle([...searchByAirports(value), ...searchByPorts(value)])
 }
 
+// airlines
+
+const getAirlines = () => [...airlines]
+
 // console.log('sds', searchAirPortsByIATACode('AMA'))
-console.log('sds', searchByAirports('AMA'))
+// console.log('sds', searchByAirports('AMA'))
+
+console.log('sddd', getAirlines())
 
 module.exports = {
   JSON: [...ports, ...airports],
@@ -89,5 +95,5 @@ module.exports = {
   searchAirPortsByIATACode,
   searchByAirports,
   searchAllPorts,
-  AIRLINES: airlines,
+  getAirlines,
 }
