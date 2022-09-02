@@ -1,14 +1,17 @@
 const { ports } = require('./lib/ports')
-const { airlines } = require('./lib/airlines')
-const airports = airlines.reduce((acc, curr) => {
-  const airline = {
+const { airports: airportsArray } = require('./lib/airports')
+const { airlines: airlinesArray } = require('./lib/airlines')
+const airports = airportsArray.reduce((acc, curr) => {
+  const airport = {
     country: curr['COUNTRY'],
     city: curr['CITY']['AIRPORT'],
     name: `${curr['CITY']['AIRPORT']} (${curr['IATA CODE']})`,
     iata_code: curr['IATA CODE'],
   }
-  return [...acc, { ...airline, type: 'city' }, { ...airline, type: 'port' }]
+  return [...acc, { ...airport, type: 'city' }, { ...airport, type: 'port' }]
 }, [])
+
+const airlines = airlinesArray.map((x) => x.airline)
 
 const shuffle = (array) => {
   return array.sort(() => Math.random() - 0.5)
@@ -40,7 +43,7 @@ const searchByPorts = (searchString) => {
   ])
 }
 
-// airlines
+// airports
 
 const searchAirPortsByName = (name) => {
   return airports.filter((airline) =>
@@ -72,6 +75,9 @@ const searchAllPorts = (value) => {
   return shuffle([...searchByAirports(value), ...searchByPorts(value)])
 }
 
+// console.log('sds', searchAirPortsByIATACode('AMA'))
+console.log('sds', searchByAirports('AMA'))
+
 module.exports = {
   JSON: [...ports, ...airports],
   searchPortsByCity,
@@ -83,4 +89,5 @@ module.exports = {
   searchAirPortsByIATACode,
   searchByAirports,
   searchAllPorts,
+  AIRLINES: airlines,
 }

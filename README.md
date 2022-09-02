@@ -308,3 +308,18 @@ console.log(ports.searchAirPortsByIATACode("AAR"));
 ]
 */
 ````
+
+
+### `AIRLINES`
+
+Returns an array of airlines
+
+```javascript
+[
+  'Aegean Airlines', 
+  'Aer Lingus',
+  'Aeroflot',
+  'Aerolineas Argentinas',
+  ...
+]
+```
