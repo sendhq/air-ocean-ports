@@ -4,7 +4,7 @@
   "description": "ports send uses",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Excellence Oyeniran <oyeniranexcellenced@gmail.com>",
   "license": "ISC",
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/chevck/air-ocean-ports/issues"
   },
-  "homepage": "https://github.com/chevck/air-ocean-ports#readme"
+  "homepage": "https://github.com/chevck/air-ocean-ports#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }
