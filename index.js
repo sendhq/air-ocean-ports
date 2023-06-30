@@ -85,4 +85,5 @@ module.exports = {
   searchAllPorts,
   AIRLINES: airlines,
   SHIPPINGLINES: shippinglines,
+  Terminals,
 };
