@@ -15,7 +15,6 @@ const airports = airportsArray.reduce((acc, curr) => {
 }, []);
 
 const airlines = airlinesArray.map((x) => x.airline);
-const shippinglines = shippingLines.map((x) => x.value);
 
 const shuffle = (array) => {
   return array.sort(() => Math.random() - 0.5);
@@ -84,6 +83,6 @@ module.exports = {
   searchByAirports,
   searchAllPorts,
   AIRLINES: airlines,
-  SHIPPINGLINES: shippinglines,
+  SHIPPINGLINES: shippingLines,
   Terminals,
 };
