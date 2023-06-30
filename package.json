@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "engineering@send.ng",
+  "author": "engineers@send.ng",
   "license": "ISC",
   "directories": {
     "lib": "lib"
