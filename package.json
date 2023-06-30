@@ -1,5 +1,5 @@
 {
-  "name": "air-ocean-ports",
+  "name": "@sendhq/air-ocean-ports",
   "version": "0.0.1",
   "description": "ports send uses",
   "main": "index.js",
