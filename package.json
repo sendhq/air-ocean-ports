@@ -1,6 +1,6 @@
 {
-  "name": "@sendhq/air-ocean-ports",
-  "version": "0.0.1",
+  "name": "air-ocean-port",
+  "version": "0.0.2",
   "description": "ports send uses",
   "main": "index.js",
   "scripts": {
