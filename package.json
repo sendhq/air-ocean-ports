@@ -1,19 +1,19 @@
 {
-  "name": "air-ocean-ports",
-  "version": "0.1.1",
+  "name": "air-ocean-port",
+  "version": "0.0.4",
   "description": "ports send uses",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "author": "Excellence Oyeniran <oyeniranexcellenced@gmail.com>",
+  "author": "engineers@send.ng",
   "license": "ISC",
   "directories": {
     "lib": "lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chevck/air-ocean-ports.git"
+    "url": "git+https://github.com/sendhq/air-ocean-ports.git"
   },
   "keywords": [
     "ocean",
@@ -22,7 +22,10 @@
     "sea"
   ],
   "bugs": {
-    "url": "https://github.com/chevck/air-ocean-ports/issues"
+    "url": "https://github.com/sendhq/air-ocean-ports/issues"
   },
-  "homepage": "https://github.com/chevck/air-ocean-ports#readme"
+  "homepage": "https://github.com/sendhq/air-ocean-ports#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }

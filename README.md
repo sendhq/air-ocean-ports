@@ -1,4 +1,5 @@
 # sea-ports
+
 Sea Ports Data
 
 Minified sea ports based on [this package](https://github.com/marchah/sea-ports/)
@@ -8,7 +9,7 @@ Minified sea ports based on [this package](https://github.com/marchah/sea-ports/
 Install via [npm](https://www.npmjs.com/):
 
 ```
-$ npm install air-ocean-ports
+$ npm install air-ocean-port
 ```
 
 ## Documentation
@@ -18,6 +19,7 @@ $ npm install air-ocean-ports
 #### `JSON`
 
 Returns an array of the ports (ocean & air)
+
 ```javascript
 [
   {
@@ -62,10 +64,10 @@ Search for ports matching with either name, province, or country
 
 ## Examples
 
-````javascript
+```javascript
 var ports = require('ocean-ports');
 
-console.log(ports.searchPorts("Lagos"));
+console.log(ports.searchPorts('Lagos'));
 /*
 [
   {
@@ -112,8 +114,7 @@ console.log(ports.searchPorts("Lagos"));
   }
 ]
 */
-````
-
+```
 
 ### searchAirPortsByName(string)
 
@@ -121,10 +122,10 @@ Search for airports matching with name
 
 ## Examples
 
-````javascript
-var ports = require('air-ocean-ports');
+```javascript
+var ports = require('air-ocean-port');
 
-console.log(ports.searchAirPortsByName("Aarhus"));
+console.log(ports.searchAirPortsByName('Aarhus'));
 /*
 [
 {
@@ -135,8 +136,7 @@ console.log(ports.searchAirPortsByName("Aarhus"));
   }
 ]
 */
-````
-
+```
 
 ### searchByName(name)
 
@@ -144,10 +144,10 @@ Search for ports matching with name
 
 ## Examples
 
-````javascript
-var ports = require('ocean-ports');
+```javascript
+var ports = require('air-ocean-port');
 
-console.log(ports.searchByName("Apapa"));
+console.log(ports.searchByName('Apapa'));
 /*
 [
   {
@@ -166,7 +166,7 @@ console.log(ports.searchByName("Apapa"));
   }
 ]
 */
-````
+```
 
 ### searchByCountry(country)
 
@@ -174,10 +174,10 @@ Search for ports matching with country
 
 ## Examples
 
-````javascript
-var ports = require('ocean-ports');
+```javascript
+var ports = require('air-ocean-port');
 
-console.log(ports.searchByCountry("Nigeria"));
+console.log(ports.searchByCountry('Nigeria'));
 /*
 [
   {
@@ -218,7 +218,7 @@ console.log(ports.searchByCountry("Nigeria"));
 ...
 ]
 */
-````
+```
 
 ### searchByCity(city)
 
@@ -226,10 +226,10 @@ Search for ports matching with city
 
 ## Examples
 
-````javascript
-var ports = require('ocean-ports');
+```javascript
+var ports = require('air-ocean-port');
 
-console.log(ports.searchByCity("Rivers"));
+console.log(ports.searchByCity('Rivers'));
 /*
 [
   {
@@ -262,7 +262,7 @@ console.log(ports.searchByCity("Rivers"));
   }
 ]
 */
-````
+```
 
 ### searchAirPortsByCountry(country)
 
@@ -270,10 +270,10 @@ Search for airports matching with country
 
 ## Examples
 
-````javascript
-var ports = require('air-ocean-ports');
+```javascript
+var ports = require('air-ocean-port');
 
-console.log(ports.searchAirPortsByCountry("Denmark"));
+console.log(ports.searchAirPortsByCountry('Denmark'));
 /*
 [
 {
@@ -284,8 +284,7 @@ console.log(ports.searchAirPortsByCountry("Denmark"));
   }
 ]
 */
-````
-
+```
 
 ### searchAirPortsByIATACode(country)
 
@@ -293,10 +292,10 @@ Search for airports matching with IATA_CODE
 
 ## Examples
 
-````javascript
-var ports = require('air-ocean-ports');
+```javascript
+var ports = require('air-ocean-port');
 
-console.log(ports.searchAirPortsByIATACode("AAR"));
+console.log(ports.searchAirPortsByIATACode('AAR'));
 /*
 [
 {
@@ -307,8 +306,7 @@ console.log(ports.searchAirPortsByIATACode("AAR"));
   }
 ]
 */
-````
-
+```
 
 ### `AIRLINES`
 
@@ -316,7 +314,7 @@ Returns an array of airlines
 
 ```javascript
 [
-  'Aegean Airlines', 
+  'Aegean Airlines',
   'Aer Lingus',
   'Aeroflot',
   'Aerolineas Argentinas',
@@ -330,7 +328,7 @@ Returns an array of shipping lines
 
 ```javascript
 [
-  'A.P. MOLLER-MAERSK GROUP', 
+  'A.P. MOLLER-MAERSK GROUP',
   'MEDITERRANEAN SHIPPING COMPANY S.A. (MSC)',
   'CHINA COSCO',
   'CMA CGM GROUP',
